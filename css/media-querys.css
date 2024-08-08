@@ -1,0 +1,472 @@
+@media (max-width: 1600px){
+    .logo__footer svg{
+        width: 217px;
+        height: 57px;
+    }
+    
+    .search__input{
+        display: none;
+    }
+
+    .search__controller{
+        width: 39px;
+    }
+
+    .search__button{
+        background: var(--color-main-black);
+        width: 39px;
+        height: 39px;
+
+        border-radius: 88.64px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: unset;
+    }
+
+    .search__button svg{
+        fill: var(--color-main-white)
+    }
+
+    .controllers__container{
+        gap: 180.5px;
+    }
+
+    .header__up .__container{
+        max-width: 1240px;
+    }
+
+    .header__main{
+        max-width: 1240px;
+        gap: 163.5px;
+    }
+
+    .page__header{
+        max-width: 1240px;
+    }
+
+    .page__content{
+        max-width: 1240px;
+        gap: 30px;
+    }
+
+    /* product card styles */
+
+.product__card__container{
+    width: 287px;
+    height: 516px;
+}
+
+.product__card__img{
+    height: 428px;
+}
+
+.product__card__name{
+    white-space: nowrap; 
+}
+
+.product__card__img span{
+    font-size: 16px;
+}
+
+.button__more{
+    left: 14px;
+}
+
+.footer__container{
+    max-width: 1240px;
+}
+
+.logo__wrapper{
+    gap: 55.62px;
+    margin-right: 70px;
+}
+
+.contacts__wrapper{
+    margin-right: 82px;
+}
+
+.service__wrapper{
+    margin-right: 136.98px;
+}
+
+}
+
+@media (max-width: 1340px){
+    .logo__footer svg{
+        width: 180px;
+        height: 47px;
+    }
+
+    .header__up{
+        display: none;
+    }
+
+    .header__main{
+        padding: 0 44px;
+        max-width: unset;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .burger__menu{
+        position: absolute;
+        opacity: 0;
+    }
+
+    .burger__button{
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 24px;
+        background: none;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+    }
+
+    .burger__button::before{
+        content: "";
+        display: block;
+        position: absolute;
+
+        top: 6.2px;
+        left: 8.33px;
+
+        width: 23.33px;
+        height: 1.6px;
+        background: var(--color-burger-menu);
+        transition: 0.5s;
+    }
+
+    .burger__button::after{
+        content: "";
+        display: block;
+        position: absolute;
+
+        bottom: 6.2px;
+        left: 8.33px;
+        
+        width: 23.33px;
+        height: 1.6px;
+        background: var(--color-burger-menu);
+        transition: 0.5s;
+    }
+
+    .burger__button span{
+        content: "";
+        display: block;
+        position: absolute;
+
+        bottom: 11.2px;
+        left: 8.33px;
+        
+        width: 23.33px;
+        height: 1.6px;
+        background: var(--color-burger-menu);
+        transition: 0.5s;
+    }
+
+    .burger__button.Active::before{
+        transform: rotate(45deg);
+        transition: 0.5s;
+        top: 50%;
+    
+    }
+    
+    .burger__button.Active::after{
+        transform: rotate(-45deg);
+        top: 50%;
+        transition: 0.5s;
+    }
+    
+    .burger__button.Active span{
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .burger__menu.Active{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 1;
+        transition: 0.5s;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+
+        width: 100vw;
+        backdrop-filter: blur(10px);
+
+        height: 100vh;
+        z-index: 1;
+        overflow-y: hidden;
+
+    }
+
+    .controllers__container{
+        display: none;
+    }
+
+    .products{
+        padding: 0 44px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    
+    .page__header h2{
+        font-size: 32px;
+        line-height: 44.8px;
+    }
+    
+    .page__content{
+        gap: 50px 39px;
+    }
+
+    .footer{
+        min-height: 521px;
+
+        padding: 50px 44px;
+    }
+
+    .footer__container{
+        display: none;
+    }
+
+    .footer__container__mobile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo{
+        z-index: 2;
+    }
+
+    .logo svg{
+        width: 142px;
+        height: 36px;
+    }
+
+    .logo__wrapper{
+        margin-bottom: 33.23px;
+    }
+
+    .mobile__info__footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row;
+        
+        gap: 30px;
+
+        width: 100%;
+
+        margin-bottom: 20px;
+    }
+
+    .svg__link__container{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contacts__wrapper{
+        gap: 70px;
+        margin-right: 0px;
+    }
+
+    .service__wrapper{
+        margin-right: 0;
+    }
+
+    .__graywhite{
+        margin-bottom: 10px;
+        color: var(--color-border-gray)!important;
+    }
+
+    .svg__container{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .reCaptcha__info{
+        max-width: 382px;
+    }
+
+    .product__card__container{
+        width: 320px;
+        height: 565px;
+    }
+    
+    .product__card__img{
+        height: 477px;
+    }
+
+    .svg__link__container__mobile{
+        display: none;
+    }
+    
+}
+
+@media (max-width: 480px){
+    .header__main{
+        padding: 0 35px;
+        gap: 0;
+    }
+
+    .controllers__container{
+        display: none;
+    }
+
+    .products{
+        padding: 0 35px;
+        margin-top: 50px;
+        margin-bottom: 50px;  
+    }
+    
+    .page__header h2{
+        font-size: 32px;
+        line-height: 44.8px;
+    }
+    
+    .page__content{
+        gap: 30px 10px;
+    }
+
+    .footer{
+        min-height: 521px;
+
+        padding: 40px 35px;
+    }
+
+    .footer__container{
+        display: none;
+    }
+
+    .footer__container__mobile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .logo__wrapper{
+        margin-bottom: 34.23px;
+    }
+
+    .mobile__info__footer{
+        flex-direction: column;
+        margin-bottom: 72px;
+        gap: 30px;
+    }
+
+    .svg__link__container{
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .contacts__wrapper{
+        gap: 70px;
+        margin-right: 0px;
+    }
+
+    .service__wrapper{
+        margin-right: 0;
+    }
+
+    .__graywhite{
+        margin-bottom: 0;
+    }
+
+    .svg__container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        width: 100%;
+    }
+
+    .svg__wrapper{
+        padding-left: 9px;
+    }
+
+    .reCaptcha__info{
+        max-width: 382px;
+    }
+    
+    .product__card__img{
+        height: 477px;
+    }
+
+    .svg__link__container{
+        display: none;
+    }
+
+    .svg__link__container__mobile{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .button__more{
+        opacity: 0;
+        display: none;
+    }
+
+    .product__card__container:hover .button__more{
+        opacity: 0;
+    }
+
+    .product__card__container{
+        gap: 10px;
+        max-width: 155px;
+        height: 320px;
+    }
+    
+    .product__card__img{
+        border-radius: 9.73px;
+    
+        width: 100%;
+        height: 230px;
+    }
+    
+    .product__card__info{
+        gap: 11px;
+    }
+    
+    .product__card__name{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22.4px;
+        white-space: wrap;
+    }
+    
+    .product__card__price{
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22.4px;
+        gap: 10px;
+    }
+    
+    .product__card__img span{
+        padding: 2px 14.5px;
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+}
